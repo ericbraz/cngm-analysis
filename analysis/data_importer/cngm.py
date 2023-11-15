@@ -3,5 +3,7 @@ from .base import BaseDataFetcher
 
 class Cngm(BaseDataFetcher):
 
-    def __init__(self):
+    className = 'Cngm'
+
+    def __init__(self) -> None:
         super().__init__(CNGM_URL, "cngm.json")
